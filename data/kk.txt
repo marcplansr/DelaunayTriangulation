@@ -1,0 +1,152 @@
+    	System.out.println(triangleSet.get(0).toString());
+    	System.out.println(triangleSet.get(1).toString());
+    	System.out.println(triangleSet.get(2).toString());
+    	System.out.println(triangleSet.get(3).toString());
+    	System.out.println();
+    	
+    	System.out.println(triangleSet.get(0).isClockwise());
+    	System.out.println(triangleSet.get(1).isClockwise());
+    	System.out.println(triangleSet.get(2).isClockwise());
+    	System.out.println(triangleSet.get(3).isClockwise());
+    	System.out.println();
+    	
+    	
+    	
+		MyVector side12 = new MyVector(
+				triangleSet.get(1).getVertex2().getCoordX() - 
+				triangleSet.get(1).getVertex1().getCoordX(),
+				triangleSet.get(1).getVertex2().getCoordY() - 
+				triangleSet.get(1).getVertex1().getCoordY(),
+				triangleSet.get(1).getVertex2().getCoordZ() - 
+				triangleSet.get(1).getVertex1().getCoordZ());
+		
+		MyVector side13 = new MyVector(
+				triangleSet.get(1).getVertex3().getCoordX() - 
+				triangleSet.get(1).getVertex1().getCoordX(),
+				triangleSet.get(1).getVertex3().getCoordY() - 
+				triangleSet.get(1).getVertex1().getCoordY(),
+				triangleSet.get(1).getVertex3().getCoordZ() - 
+				triangleSet.get(1).getVertex1().getCoordZ());
+    	
+		System.out.println(side12);
+		System.out.println(side13);
+		System.out.println(side12.getAngle2D(side13));
+
+    	
+    	
+//		for (int i = 0; i < triangleSet.size(); ++i) {
+//			MyTriangle currentTriangle = triangleSet.get(i).cloneTriangle();
+//			boolean addTriangle = true;
+//			int j = 0;
+//			while ((j < pointSet.size()) && (addTriangle)) {
+//				MyVector currentPoint = pointSet.get(j);
+//    	
+//				if (!currentTriangle.contains(currentPoint) && 
+//						(!currentTriangle.isDelaunay(currentPoint))) {
+//					addTriangle = false;
+//				}
+//				j++;
+//			}
+//			if (addTriangle) {
+//				delaunaySet.add(currentTriangle);
+//			}
+//		}
+		
+		
+//		System.out.println(triangleSet.get(0).contains(pointSet.get(0)));
+//		System.out.println(triangleSet.get(0).contains(pointSet.get(1)));
+//		System.out.println(triangleSet.get(0).contains(pointSet.get(2)));
+//		System.out.println(triangleSet.get(0).contains(pointSet.get(3)));
+//		System.out.println();
+//		System.out.println(triangleSet.get(1).contains(pointSet.get(0)));
+//		System.out.println(triangleSet.get(1).contains(pointSet.get(1)));
+//		System.out.println(triangleSet.get(1).contains(pointSet.get(2)));
+//		System.out.println(triangleSet.get(1).contains(pointSet.get(3)));		
+//		System.out.println();
+//		System.out.println(triangleSet.get(2).contains(pointSet.get(0)));
+//		System.out.println(triangleSet.get(2).contains(pointSet.get(1)));
+//		System.out.println(triangleSet.get(2).contains(pointSet.get(2)));
+//		System.out.println(triangleSet.get(2).contains(pointSet.get(3)));			
+//		System.out.println();
+//		System.out.println(triangleSet.get(3).contains(pointSet.get(0)));
+//		System.out.println(triangleSet.get(3).contains(pointSet.get(1)));
+//		System.out.println(triangleSet.get(3).contains(pointSet.get(2)));
+//		System.out.println(triangleSet.get(3).contains(pointSet.get(3)));			
+//		System.out.println();		
+//		System.out.println(triangleSet.get(0).isDelaunay(pointSet.get(3)));
+//		System.out.println(triangleSet.get(1).isDelaunay(pointSet.get(2)));
+//		System.out.println(triangleSet.get(2).isDelaunay(pointSet.get(1)));
+//		System.out.println(triangleSet.get(3).isDelaunay(pointSet.get(0)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BRUTE FORCE MAIN
+
+
+//	public static void main(String[] args) throws FileNotFoundException {
+//		
+//		ArrayList<MyVector> pointSet = InitData.pointSet("pointSet_170504182712");
+//		ArrayList<MyTriangle> triangleSet = getTriangles(pointSet);
+//		ArrayList<MyTriangle> delaunaySet = new ArrayList<MyTriangle>();
+//		
+//
+//		
+//		for (int i = 0; i < triangleSet.size(); ++i) {
+//			boolean addTriangle = true;
+//			int j = 0;
+//			while ((j < pointSet.size()) && (addTriangle)) {
+//				
+////				System.out.println("===");
+////				System.out.println(pointSet.get(j).getVectorId());
+////				System.out.println(triangleSet.get(i).getVertex1().getVectorId());
+////				System.out.println(triangleSet.get(i).getVertex2().getVectorId());
+////				System.out.println(triangleSet.get(i).getVertex3().getVectorId());
+//				
+//				if (!triangleSet.get(i).contains(pointSet.get(j))) {
+//					addTriangle = triangleSet.get(i).isDelaunay(pointSet.get(j));
+//				}
+//					
+////				} else {
+////					System.out.println("és un vertex");
+////				}
+////				System.out.println("===");
+////				addTriangle = triangleSet.get(i).isDelaunay(pointSet.get(j));
+
+////				System.out.println(pointSet.get(j));
+////				System.out.println(j);
+//				
+//				j++;
+//			}
+//			System.out.println("*****canvi triangle");
+//			
+//			if (addTriangle) {
+//				delaunaySet.add(triangleSet.get(i));
+//			}
+//		}
+//		System.out.println(delaunaySet.size());
+////		for (int i = 0; i < delaunaySet.size(); ++i) {
+////			System.out.println(delaunaySet.get(i).toString());
+////		}
+//		
+//
+//	}
+
+
+
+
+
+
+
+
+
+

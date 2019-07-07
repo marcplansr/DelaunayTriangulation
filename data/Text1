@@ -1,0 +1,18 @@
+import bpy
+
+
+
+
+
+verts = [(0, 0, 0),(1, 1, 0),(2, 0, 0)]
+faces = [[0, 1, 2]]
+
+my_mesh = bpy.data.meshes.new["MyTriangle"]
+my_obj = bpy.data.objects.new["MyTriangle", my_mesh]
+
+my_obj.location = bpy.context.scene.cursor_location
+
+
+object_data_add(context, mesh, operator=self)
+
+bpy.context.scene.objects.link[my_obj]
